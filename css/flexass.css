@@ -1,0 +1,185 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+div.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 0px;
+    background-color: white;
+}
+div.navbarmobile{
+    display: none;
+}
+div.navbar a:nth-of-type(2){
+    margin-left: auto;
+    color: rgb(115,115,115);
+    align-self: center;
+}
+div.navbar a:nth-of-type(1){
+    margin-left: 80px;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+    align-self: center;
+}
+div.navbar a:nth-of-type(6){
+    margin-left: 50px;
+    margin-right: 80px;
+    background-color: rgb(1,96,242);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+div.navbar a:nth-of-type(3){
+    margin-left: 30px;
+    color: rgb(115,115,115);
+    align-self: center;
+}
+div.navbar a:nth-of-type(4){
+    margin-left: 30px;
+    color: rgb(115,115,115);
+    align-self: center;
+    
+}
+div.navbar a:nth-of-type(5){
+    margin-left: 30px;
+    color: rgb(115,115,115);
+    align-self: center;
+
+}
+.fa-greater-than{
+    scale: 0.6;
+    margin-left: 5px;
+}
+.fa-arrow-right{
+    scale: 0.7;
+    margin-left: 5px;
+}
+div.mainlanding{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    background-color: rgb(105,0,199);
+    padding: 90px;
+}
+div.landing1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+div.landing1 h2{
+    font-size: 2.4rem;
+    color: white;
+}
+div.landing1 p{
+    font-size: 1.3rem;
+    color: white;
+}
+div.landing1 a{
+    background-color: white;
+    color: rgb(105,0,199);
+    width: fit-content;
+    margin-top: 4px;
+    padding: 3px;
+    border-radius: 15px;
+}
+form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    background-color: white;
+    width: 450px;
+    padding-left: 30px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+form > .fname{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 44%;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+form > .Lname{
+    display: flex;
+    flex-direction: column;
+    min-width: 44%;
+    gap: 10px;
+}
+form > .Email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 90%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+form > .Company{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+form button{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    gap: 10px;
+    padding: 13px 10px;
+    background-color: rgb(89,153,246);
+    border: none;
+}
+
+
+form > h3{
+    display: flex;
+    flex-direction: column;
+    min-width: 90%;
+    color: rgb(0,115,245);
+    background-color: rgb(248,248,249);
+    padding: 20px;
+    gap: 10px;
+    margin-bottom:20px ;
+}
+form input{
+    padding: 9px 0px;
+    gap: 10px;
+}
+.landing1{
+    align-self: center;
+}
+@media all and (max-width:830px){
+    div.navbar{
+        display: none;
+    }
+    div.navbarmobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    div.navbarmobile a{
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    div.navbarmobile a:nth-of-type(2){
+        color: rgb(0,115,245);
+    }
+}
